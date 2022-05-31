@@ -21,18 +21,18 @@ if (function_exists('add_filter')) {
 
     // Set Sage9 friendly path at /theme-directory/resources/assets/acf-json
 
-        if (is_dir(get_stylesheet_directory() . '/assets')) {
+        if (is_dir(get_stylesheet_directory() . '/web/app/themes/proteket-headless/assets')) {
             // This is Sage 9
-            $path = get_stylesheet_directory() . '/assets/acf-json';
-        } elseif (is_dir(get_stylesheet_directory() . '/resources/assets')) {
+            $path = get_stylesheet_directory() . '/web/app/themes/proteket-headless/assets/acf-json';
+        } elseif (is_dir(get_stylesheet_directory() . '/web/app/themes/proteket-headless/resources/assets')) {
             // This is old Sage 10
-            $path = get_stylesheet_directory() . '/resources/assets/acf-json';
-        } elseif (is_dir(get_stylesheet_directory() . '/resources')) {
+            $path = get_stylesheet_directory() . '/web/app/themes/proteket-headless/resources/assets/acf-json';
+        } elseif (is_dir(get_stylesheet_directory() . '/web/app/themes/proteket-headless/resources')) {
             // This is Sage 10
-            $path = get_stylesheet_directory() . '/resources/acf-json';
+            $path = get_stylesheet_directory() . '/web/app/themes/proteket-headless/resources/acf-json';
         } else {
             // This probably isn't Sage
-            $path = get_stylesheet_directory() . '/acf-json';
+            $path = get_stylesheet_directory() . '/web/app/themes/proteket-headless/acf-json';
         }
 
         // If the directory doesn't exist, create it.
